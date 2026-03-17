@@ -18,7 +18,7 @@ def _env(key: str, default: str) -> str:
 # ----------------------------
 # Config (ENV OVERRIDES)
 # ----------------------------
-MODEL_PATH = _env("MODEL_PATH", r"C:\Users\trivi\Documents\llm_models\Mistral-7B-Instruct-v0.1")
+MODEL_PATH = _env("MODEL_PATH", r"Documents\llm_models\Mistral-7B-Instruct-v0.1")
 MODEL_NAME = os.path.basename(MODEL_PATH)
 
 EMBED_MODEL_NAME = _env("EMBED_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
